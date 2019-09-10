@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+ 
+
+  <script>
+
+ arraynum = [];
+  for(let i=0; i<10; i++){
+    arraynum[i] =prompt("digite Numero " + (i+1))
+  }
+  suma=0
+  multiplicar=1
+  for(let i=0; i<10; i++){
+  
+   if(parseInt(arraynum[i])>0){
+    suma=suma+parseInt(arraynum[i])
+   }
+   if(parseInt(arraynum[i])<0){
+    multiplicar=multiplicar*parseInt(arraynum[i])
+   }
+
+   }
+
+ document.writeln("El resultado de la suma es: " + suma + "\n")
+ document.writeln("El resultado de la Multiplicaion es: " + multiplicar + "\n")
+  </script>
+ 
+
+
+
+
+</body>
+</html>

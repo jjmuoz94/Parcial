@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   
+    <script>
+    
+        n=10
+    
+        arraynombre = [];
+        arraysueldo = [];
+        arraysexo = [];
+
+      for(let i=0; i<n; i++){
+        arraynombre[i] =prompt("digite nombre del emplado N. " + (i+1))
+        arraysueldo[i] =prompt("digite sueldo del emplado N. " + (i+1))
+        arraysexo[i] =prompt("digite sexo del emplado N. " + (i+1))
+      }
+      masde500=0
+      menosde400=0
+     
+      for(let i=0; i<n; i++){
+      
+       if(parseInt(arraysueldo[i])>500 && parseInt(arraysexo[i])==1){
+        masde500=masde500+1
+       }
+       if(parseInt(arraysueldo[i])<400 && parseInt(arraysexo[i])==2){
+        menosde400=menosde400+1
+       }
+    
+       }
+    
+     document.writeln("Mujeres que ganan mas de 500: " + masde500 + "\n")
+     document.writeln("Mujeres que ganan mas de 500: " + menosde80 + "\n")
+        
+        
+        </script>
+
+
+</body>
+</html>

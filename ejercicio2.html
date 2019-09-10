@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    n=parseInt(prompt("digite Valor de N"))
+
+    arraypeso = [];
+  for(let i=0; i<n; i++){
+    arraypeso[i] =prompt("digite Numero " + (i+1))
+  }
+  masde80=0
+  menosde80=0
+ 
+  for(let i=0; i<n; i++){
+  
+   if(parseInt(arraypeso[i])>80){
+    masde80=masde80+1
+   }
+   if(parseInt(arraypeso[i])<80){
+    menosde80=menosde80+1
+   }
+
+   }
+
+ document.writeln("Personas que pesan mas de 80: " + masde80 + "\n")
+ document.writeln("Personas que pesan menos de 80: " + menosde80 + "\n")
+    
+    
+    </script>
+</body>
+</html>
